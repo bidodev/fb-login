@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; //define 1rem size
+}
+
+.wrapper {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 8rem 62rem 21rem;
+
+  grid-template-areas:
+    "header header"
+    "info-text date-form"
+    "footer footer";
+}
+.wrapper > * {
+  border: 1px solid black;
+}
+
+.header {
+  grid-area: header;
+  background-color: #3b5998;
+}
+
+.info-text {
+  grid-area: info-text;
+  background: #edf0f5;
+}
+
+.date-form {
+  grid-area: date-form;
+  background: #edf0f5;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #fff;
+}

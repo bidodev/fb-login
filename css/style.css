@@ -1,0 +1,60 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  min-height: 100vh;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 8rem 62rem 21rem;
+      grid-template-rows: 8rem 62rem 21rem;
+      grid-template-areas: "header header" "info-text date-form" "footer footer";
+}
+
+.wrapper > * {
+  border: 1px solid black;
+}
+
+.header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: header;
+  background-color: #3b5998;
+}
+
+.info-text {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: info-text;
+  background: #edf0f5;
+}
+
+.date-form {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: date-form;
+  background: #edf0f5;
+}
+
+.footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: footer;
+  background-color: #fff;
+}
+/*# sourceMappingURL=style.css.map */
