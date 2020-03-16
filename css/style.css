@@ -51,9 +51,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 23.5vw;
-          flex: 0 0 23.5vw;
-  margin-right: 12.2vw;
+      -ms-flex: 0 0 35.5vw;
+          flex: 0 0 35.5vw;
 }
 
 .facebook__logo-img {
@@ -62,6 +61,7 @@ body {
 }
 
 .facebook__auth {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -73,8 +73,39 @@ body {
   -ms-flex-item-align: stretch;
       align-self: stretch;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 40rem;
-          flex: 0 0 40rem;
+      -ms-flex: 0 0 21vw;
+          flex: 0 0 21vw;
+}
+
+.facebook__auth-msg {
+  position: absolute;
+  top: 1rem;
+  left: 0.9rem;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: normal;
+  padding-left: 1px;
+}
+
+.facebook__auth-pswd {
+  position: absolute;
+  top: 1rem;
+  left: 17.6rem;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: normal;
+  padding-left: 1px;
+}
+
+.facebook__auth-recover-pswd {
+  cursor: pointer;
+  position: absolute;
+  top: 5.7rem;
+  left: 17.6rem;
+  color: #9cb4d8;
+  font-size: 1.2rem;
+  font-weight: normal;
+  padding-left: 1px;
 }
 
 .facebook__auth__email {
@@ -129,7 +160,7 @@ body {
 .info-text__friends {
   color: #333;
   font-size: 2.8rem;
-  height: 14rem;
+  height: 12rem;
   width: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -140,14 +171,13 @@ body {
   padding-right: 2rem;
 }
 
-.k {
-  width: 80%;
+.info-text__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -155,6 +185,23 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 38vw;
+  height: 85%;
+}
+
+.k {
+  height: 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 2rem;
 }
 
 .text-bold {
@@ -162,6 +209,7 @@ body {
   font-size: 1.7rem;
   font-weight: bold;
   line-height: 2.2rem;
+  padding-left: 1rem;
 }
 
 .text-normal {
@@ -172,8 +220,54 @@ body {
   font-weight: 200;
 }
 
-h2 {
-  padding: 2rem 4rem;
+.create-account {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 18vh;
+}
+
+.create-account__h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #333;
+  font-size: 3.6rem;
+  line-height: 1.2;
+  margin-top: 1rem;
+}
+
+.create-account__span {
+  color: #333;
+  font-size: 19px;
+  line-height: 1.26;
+  margin-top: 1rem;
+}
+
+.create-account--btn {
+  cursor: pointer;
+  width: 80%;
+  padding: 0.5rem;
+  font-size: 2rem;
+  color: #fff;
+  border: none;
+  background-color: #4267b2;
+  border-color: #29487d;
+  border-radius: 2px;
+}
+
+.create-account--btn:hover {
+  opacity: 0.7;
 }
 
 .date-form {
@@ -278,5 +372,11 @@ a {
   height: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.fa-laptop,
+.fa-star,
+.fa-search {
+  color: #333;
 }
 /*# sourceMappingURL=style.css.map */
