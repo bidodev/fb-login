@@ -130,6 +130,8 @@ body {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   font-weight: 500;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .facebook__auth__btn-login:hover {
