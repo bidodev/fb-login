@@ -11,7 +11,12 @@ html {
   font-size: 62.5%; //define 1rem size
 }
 
+body {
+  font-family: "Freight Sans Bold", Helvetica, Arial, sans-serif;
+}
+
 .wrapper {
+  font-size: 1.6rem;
   display: grid;
   min-height: 100vh;
   grid-template-columns: 1fr 1fr;
@@ -22,18 +27,90 @@ html {
     "info-text date-form"
     "footer footer";
 }
-.wrapper > * {
-  border: 1px solid black;
-}
+// .wrapper > * {
+//   border: 1px solid black;
+// }
 
+///////////////////////////////////////////////////
+///////HEADER
 .header {
+  //border: 5px solid black;
   grid-area: header;
   background-color: #3b5998;
+  display: flex;
+}
+
+.facebook__logo {
+  display: flex;
+  border: 2px solid white;
+  align-self: stretch;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+
+  &-img {
+    height: 4rem;
+    width: 10rem;
+    background-color: red;
+    border: 1px solid black;
+  }
+}
+
+.facebook__auth {
+  border: 2px solid white;
+  flex-basis: 50rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-self: stretch;
+
+  &-email {
+    height: 4rem;
+    width: 10rem;
+    background-color: red;
+    border: 1px solid black;
+  }
+
+  &-pswd {
+    height: 4rem;
+    width: 10rem;
+    background-color: blue;
+    border: 1px solid black;
+  }
+
+  &-btn-login {
+    height: 4rem;
+    width: 10rem;
+    background-color: green;
+    border: 1px solid black;
+  }
 }
 
 .info-text {
   grid-area: info-text;
   background: #edf0f5;
+  display: flex;
+  flex-direction: column;
+  padding-top: 5rem;
+  padding-left: 30rem;
+}
+
+.text-bold {
+  color: #333;
+  font-size: 1.7rem;
+  font-weight: bold;
+  line-height: 2.2rem;
+}
+
+.text-normal {
+  color: #666;
+  font-size: 15px;
+  line-height: 20px;
+  vertical-align: middle;
+}
+
+h2 {
+  padding: 2rem 4rem;
 }
 
 .date-form {
