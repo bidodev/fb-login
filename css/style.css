@@ -29,7 +29,7 @@ body {
       grid-template-areas: "header header" "info-text date-form" "footer footer";
 }
 
-.header {
+.facebook-header {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
@@ -38,37 +38,32 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .facebook__logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 2px solid white;
   -ms-flex-item-align: stretch;
       align-self: stretch;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 20vw;
+          flex: 0 0 20vw;
+  margin-right: 15vw;
 }
 
 .facebook__logo-img {
-  height: 4rem;
-  width: 10rem;
-  background-color: red;
-  border: 1px solid black;
+  height: 8rem;
+  width: auto;
 }
 
 .facebook__auth {
-  border: 2px solid white;
-  -ms-flex-preferred-size: 50rem;
-      flex-basis: 50rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -79,27 +74,19 @@ body {
           align-items: center;
   -ms-flex-item-align: stretch;
       align-self: stretch;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 40rem;
+          flex: 0 0 40rem;
 }
 
-.facebook__auth-email {
-  height: 4rem;
-  width: 10rem;
-  background-color: red;
-  border: 1px solid black;
+.login-form__email {
+  width: 15rem;
+  height: 2.3rem;
 }
 
-.facebook__auth-pswd {
-  height: 4rem;
-  width: 10rem;
-  background-color: blue;
-  border: 1px solid black;
-}
-
-.facebook__auth-btn-login {
-  height: 4rem;
-  width: 10rem;
-  background-color: green;
-  border: 1px solid black;
+.login-form__pswd {
+  width: 15rem;
+  height: 2.3rem;
 }
 
 .info-text {
@@ -141,13 +128,39 @@ h2 {
   -ms-grid-column: 2;
   grid-area: date-form;
   background: #edf0f5;
+  padding: 5rem;
 }
 
 .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: footer;
   background-color: #fff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.a {
+  height: 14rem;
+  width: 100rem;
+}
+
+.b {
+  height: 14rem;
+  width: 100rem;
+}
+
+.c {
+  height: 14rem;
+  width: 100rem;
 }
 /*# sourceMappingURL=style.css.map */

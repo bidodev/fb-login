@@ -8,16 +8,39 @@
   </head>
   <body>
     <div class="wrapper">
-      <header class="header">
+      <header class="facebook-header">
         <div class="facebook__logo">
-          <div class="facebook__logo-img">
-            facebook
-          </div>
+          <img
+            src="./img/logo.png"
+            class="facebook__logo-img"
+            alt="user icon"
+          />
         </div>
         <div class="facebook__auth">
-          <div class="facebook__auth-email">email</div>
-          <div class="facebook__auth-pswd">pswd</div>
-          <div class="facebook__auth-btn-login">login-btn</div>
+          <div class="facebook__auth-email">
+            <input
+              type="email"
+              class="login-form__email"
+              name="email"
+              id="email"
+            />
+          </div>
+          <div class="facebook__auth-pswd">
+            <input
+              type="password"
+              class="login-form__pswd"
+              name="pswd"
+              id="pswd"
+            />
+          </div>
+          <div class="facebook__auth-btn-login">
+            <input
+              value="Log In"
+              aria-label="Log In"
+              type="submit"
+              id="login"
+            />
+          </div>
         </div>
       </header>
       <div class="info-text">
@@ -48,12 +71,18 @@
         time. Sign Up Create a Page for a celebrity, band or business.
       </div>
       <footer class="footer">
-        English (US) Deutsch Türkçe Polski Italiano Română Français (France)
-        Русский العربية Español Português (Brasil) Sign UpLog
-        InMessengerFacebook LiteWatchPeoplePagesPage
-        CategoriesPlacesGamesLocationsMarketplaceGroupsInstagramLocalFundraisersServicesAboutCreate
-        AdCreate PageDevelopersCareersPrivacyCookiesAd
-        ChoicesImpressum/Terms/NetzDGHelpSettingsActivity Log Facebook © 2020
+        <div class="a">
+          <a href="">English (US)</a> <a href="">Deutsch </a> Türkçe Polski
+          Italiano Română Français (France) Русский العربية Español Português
+          (Brasil)
+        </div>
+        <div class="b">
+          Sign UpLog InMessengerFacebook LiteWatchPeoplePagesPage
+          CategoriesPlacesGamesLocationsMarketplaceGroupsInstagramLocalFundraisersServicesAboutCreate
+          AdCreate PageDevelopersCareersPrivacyCookiesAd
+          ChoicesImpressum/Terms/NetzDGHelpSettingsActivity Log
+        </div>
+        <div class="c">Facebook © 2020</div>
       </footer>
     </div>
   </body>
