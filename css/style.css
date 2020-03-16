@@ -22,8 +22,8 @@ body {
   display: -ms-grid;
   display: grid;
   min-height: 100vh;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
   -ms-grid-rows: 8rem 62rem 21rem;
       grid-template-rows: 8rem 62rem 21rem;
       grid-template-areas: "header header" "info-text date-form" "footer footer";
@@ -53,9 +53,9 @@ body {
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 20vw;
-          flex: 0 0 20vw;
-  margin-right: 15vw;
+      -ms-flex: 0 0 22vw;
+          flex: 0 0 22vw;
+  margin-right: 12vw;
 }
 
 .facebook__logo-img {
@@ -79,14 +79,37 @@ body {
           flex: 0 0 40rem;
 }
 
-.login-form__email {
+.facebook__auth__email {
   width: 15rem;
   height: 2.3rem;
 }
 
-.login-form__pswd {
+.facebook__auth__pswd {
   width: 15rem;
   height: 2.3rem;
+}
+
+.facebook__auth__btn-login {
+  border: none;
+  background-color: #4267b2;
+  border-color: #29487d;
+  color: #fff;
+  cursor: pointer;
+  height: 2.4rem;
+  width: 5rem;
+  padding: 2px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  font-weight: 500;
+}
+
+.facebook__auth__btn-login:hover {
+  background-color: #365899;
+  border-color: #29487d;
+}
+
+.facebook__auth__btn-login:active {
+  border: none;
 }
 
 .info-text {
@@ -101,8 +124,37 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 5rem;
-  padding-left: 30rem;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.info-text__friends {
+  color: #333;
+  font-size: 2.8rem;
+  width: 45rem;
+  height: 14rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.k {
+  width: 50rem;
+  height: 37rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .text-bold {
@@ -114,9 +166,10 @@ body {
 
 .text-normal {
   color: #666;
-  font-size: 15px;
-  line-height: 20px;
+  font-size: 1.5rem;
+  line-height: 2rem;
   vertical-align: middle;
+  font-weight: 200;
 }
 
 h2 {
@@ -150,7 +203,7 @@ h2 {
 }
 
 .a {
-  height: 14rem;
+  padding-top: 2rem;
   width: 100rem;
 }
 
@@ -162,5 +215,21 @@ h2 {
 .c {
   height: 14rem;
   width: 100rem;
+}
+
+a {
+  padding: 5px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #385898;
+}
+
+.hr__styling {
+  margin: 0 auto;
+  width: 50%;
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 /*# sourceMappingURL=style.css.map */
