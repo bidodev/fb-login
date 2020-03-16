@@ -152,25 +152,42 @@ h2 {
   grid-area: footer;
   background-color: #fff;
   align-items: center;
+  // justify-content: space-around;
   flex-direction: column;
+  //border: 1px solid red;
+  //background-color: teal;
+}
+
+.w {
+  display: flex;
+  grid-area: footer;
+  background-color: #fff;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 14rem;
+  //border: 1px solid red;
 }
 
 .a {
-  padding-top: 2rem;
-  width: 100rem;
+  width: 52vw;
+  //border: 1px solid red;
 }
 .b {
-  height: 14rem;
-  width: 100rem;
+  width: 52vw;
+  //border: 1px solid red;
 }
+.b {
+  line-height: 1.6rem;
+  width: 52vw;
+  color: #737373;
+  font-size: 1.1rem;
 
-.c {
-  height: 14rem;
-  width: 100rem;
+  //border: 1px solid red;
 }
 
 a {
-  padding: 5px;
+  padding: 1rem 5px;
   text-decoration: none;
   font-size: 1.2rem;
   color: #385898;
