@@ -113,6 +113,7 @@ body {
 }
 
 .info-text {
+  padding-top: 3rem;
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: info-text;
@@ -132,7 +133,6 @@ body {
 .info-text__friends {
   color: #333;
   font-size: 2.8rem;
-  width: 45rem;
   height: 14rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -140,17 +140,24 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-right: 2rem;
+}
+
+.k > * {
+  width: 95%;
 }
 
 .k {
-  width: 50rem;
-  height: 37rem;
+  width: 55rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -220,29 +227,30 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 14rem;
+  height: 15rem;
 }
 
 .a {
-  width: 52vw;
+  width: 53vw;
 }
 
 .b {
-  width: 52vw;
+  width: 53vw;
 }
 
-.b {
+.caca {
   line-height: 1.6rem;
-  width: 52vw;
+  width: 53vw;
   color: #737373;
   font-size: 1.1rem;
+  padding-left: 1rem;
 }
 
 a {
-  padding: 1rem 5px;
   text-decoration: none;
   font-size: 1.2rem;
   color: #385898;
+  padding-left: 1rem;
 }
 
 .hr__styling {

@@ -96,6 +96,7 @@ body {
 }
 
 .info-text {
+  padding-top: 3rem;
   grid-area: info-text;
   background: #edf0f5;
   display: flex;
@@ -106,19 +107,23 @@ body {
   &__friends {
     color: #333;
     font-size: 2.8rem;
-    width: 45rem;
     height: 14rem;
     display: flex;
     align-items: center;
+    padding-right: 2rem;
   }
+}
+.k > * {
+  //border: 1px red solid;
+  width: 95%;
 }
 
 .k {
-  width: 50rem;
-  height: 37rem;
-  //border: 5px blue solid;
+  width: 55rem;
+  //border: 1px red solid;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 
@@ -141,12 +146,15 @@ h2 {
   padding: 2rem 4rem;
 }
 
+//////////////////////LOGIN CREATE ACCOUNT
 .date-form {
   grid-area: date-form;
   background: #edf0f5;
   padding: 5rem;
 }
 
+////////////////////////////////////////
+/////FOOTER
 .footer {
   display: flex;
   grid-area: footer;
@@ -165,32 +173,33 @@ h2 {
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
-  height: 14rem;
+  height: 15rem;
+
   //border: 1px solid red;
 }
 
 .a {
-  width: 52vw;
+  width: 53vw;
   //border: 1px solid red;
 }
 .b {
-  width: 52vw;
-  //border: 1px solid red;
+  width: 53vw;
+  // border: 1px solid red;
 }
-.b {
+.caca {
   line-height: 1.6rem;
-  width: 52vw;
+  width: 53vw;
   color: #737373;
   font-size: 1.1rem;
-
   //border: 1px solid red;
+  padding-left: 1rem;
 }
 
 a {
-  padding: 1rem 5px;
   text-decoration: none;
   font-size: 1.2rem;
   color: #385898;
+  padding-left: 1rem;
 }
 
 .hr__styling {
