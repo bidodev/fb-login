@@ -26,7 +26,7 @@ body {
       grid-template-columns: repeat(2, 1fr);
   -ms-grid-rows: 8rem 62rem 21rem;
       grid-template-rows: 8rem 62rem 21rem;
-      grid-template-areas: "header header" "info-text date-form" "footer footer";
+      grid-template-areas: "header header" "date-form info-text" "footer footer";
 }
 
 .facebook-header {
@@ -47,19 +47,17 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-item-align: stretch;
-      align-self: stretch;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 22vw;
-          flex: 0 0 22vw;
-  margin-right: 12vw;
+      -ms-flex: 0 0 23.5vw;
+          flex: 0 0 23.5vw;
+  margin-right: 12.2vw;
 }
 
 .facebook__logo-img {
-  height: 8rem;
+  height: 4.2rem;
   width: auto;
 }
 
@@ -108,14 +106,9 @@ body {
   border-color: #29487d;
 }
 
-.facebook__auth__btn-login:active {
-  border: none;
-}
-
 .info-text {
-  padding-top: 3rem;
   -ms-grid-row: 2;
-  -ms-grid-column: 1;
+  -ms-grid-column: 2;
   grid-area: info-text;
   background: #edf0f5;
   display: -webkit-box;
@@ -125,15 +118,19 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: flex-center;
+      -ms-flex-align: flex-center;
+          align-items: flex-center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .info-text__friends {
   color: #333;
   font-size: 2.8rem;
   height: 14rem;
+  width: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -143,21 +140,17 @@ body {
   padding-right: 2rem;
 }
 
-.k > * {
-  width: 95%;
-}
-
 .k {
-  width: 55rem;
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -185,10 +178,35 @@ h2 {
 
 .date-form {
   -ms-grid-row: 2;
-  -ms-grid-column: 2;
+  -ms-grid-column: 1;
   grid-area: date-form;
   background: #edf0f5;
-  padding: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.conn {
+  padding-left: 0.5px;
+  color: #0e385f;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 3rem;
+  margin-top: 4rem;
+  width: 45rem;
+  word-spacing: -1px;
+}
+
+.facebook__world-img {
+  padding-top: 2rem;
+  height: auto;
+}
+
+.date-form-wrapper {
+  height: 100%;
 }
 
 .footer {
@@ -231,16 +249,16 @@ h2 {
 }
 
 .a {
-  width: 53vw;
+  width: 57.5vw;
 }
 
 .b {
-  width: 53vw;
+  width: 57.5vw;
 }
 
 .caca {
   line-height: 1.6rem;
-  width: 53vw;
+  width: 57.5vw;
   color: #737373;
   font-size: 1.1rem;
   padding-left: 1rem;

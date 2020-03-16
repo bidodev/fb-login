@@ -16,6 +16,7 @@ body {
 }
 
 .wrapper {
+  //border: 5px solid black;
   font-size: 1.6rem;
   display: grid;
   min-height: 100vh;
@@ -24,18 +25,18 @@ body {
 
   grid-template-areas:
     "header header"
-    "info-text date-form"
+    "date-form info-text"
     "footer footer";
 }
-// //debug
+//debug
 // .wrapper > * {
-//   border: 3px solid black;
+//   border: 2px solid black;
 // }
 
 ///////////////////////////////////////////////////
 ///////HEADER
 .facebook-header {
-  //border: 5px solid black;
+  //border: 2px solid red;
   grid-area: header;
   background-color: #3b5998;
   display: flex;
@@ -43,15 +44,15 @@ body {
 }
 
 .facebook__logo {
-  display: flex;
   //border: 2px solid white;
-  align-self: stretch;
+  display: flex;
   align-items: center;
-  flex: 0 0 22vw;
-  margin-right: 12vw;
+  flex: 0 0 23.5vw;
+  margin-right: 12.2vw;
 
   &-img {
-    height: 8rem;
+    //border: 2px solid green;
+    height: 4.2rem;
     width: auto;
   }
 }
@@ -68,6 +69,7 @@ body {
     width: 15rem;
     height: 2.3rem;
   }
+
   &__pswd {
     width: 15rem;
     height: 2.3rem;
@@ -89,41 +91,37 @@ body {
       background-color: #365899;
       border-color: #29487d;
     }
-    &:active {
-      border: none;
-    }
   }
 }
 
 .info-text {
-  padding-top: 3rem;
+  //border: 2px solid white;
   grid-area: info-text;
   background: #edf0f5;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  //border: 5px red solid;
+  align-items: flex-center;
+  align-items: center;
+  // border: 5px red solid;
 
   &__friends {
+    //border: 2px solid red;
     color: #333;
     font-size: 2.8rem;
     height: 14rem;
+    width: 70%;
     display: flex;
     align-items: center;
     padding-right: 2rem;
   }
 }
-.k > * {
-  //border: 1px red solid;
-  width: 95%;
-}
 
 .k {
-  width: 55rem;
-  //border: 1px red solid;
+  width: 80%;
+  //border: 5px red solid;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
 }
 
@@ -150,7 +148,28 @@ h2 {
 .date-form {
   grid-area: date-form;
   background: #edf0f5;
-  padding: 5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.conn {
+  padding-left: 0.5px;
+  color: #0e385f;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 3rem;
+  margin-top: 4rem;
+  width: 45rem;
+  word-spacing: -1px;
+}
+
+.facebook__world-img {
+  padding-top: 2rem;
+  height: auto;
+}
+
+.date-form-wrapper {
+  height: 100%;
+  //border: 1px solid red;
 }
 
 ////////////////////////////////////////
@@ -179,16 +198,16 @@ h2 {
 }
 
 .a {
-  width: 53vw;
+  width: 57.5vw;
   //border: 1px solid red;
 }
 .b {
-  width: 53vw;
+  width: 57.5vw;
   // border: 1px solid red;
 }
 .caca {
   line-height: 1.6rem;
-  width: 53vw;
+  width: 57.5vw;
   color: #737373;
   font-size: 1.1rem;
   //border: 1px solid red;
