@@ -1,11 +1,12 @@
-# Facebook Login
+# Sign in Page
 
-> A copy of Facebook log in page using manly grid and flebox in additional! This project is for learning purposes only.
-
+> A design log in page using manly grid and flexbox in additional! 
+> This project was built during the Web development course.
+This project is for learning purposes only.
 
 #### Previous of the first version
 
-[![alt text](./img/final-version.png)](https://bidodev.github.io/fb-login/)
+[![alt text](./img/final-version.png)](https://bidodev.github.io/sign-in-page/)
 
 ### TODO
 
